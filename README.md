@@ -1,4 +1,4 @@
-# Social Activism Capstone (done)
+# Social Activism Capstone (to do later)
 Social Activism App with reliable and accurate information from your trusted social organizations, verified content updated daily. 
 
 
