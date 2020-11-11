@@ -15,22 +15,22 @@ import Error from './components/ErrorPage/ErrorPage';
 function App() {
   return (
     <div className="App">
+      <main>
+        <BrowserRouter>
+          <TopNav />
+            <Switch>
+              <Route exact path="/" component={LandingPage} />
+              <Route path="/sign-up" component={SignUpPage} />
+              <Route path="/log-in" component={LogInPage} />
+              <Route path="/about-us" component={AboutUs} />
+              <Route path="/dashboard" component={Dashboard} />
+              <Route path="/create-post" component={CreatePost} />
+              <Route path="/explore-feed" component={ExploreFeedPage} />
 
-      <BrowserRouter>
-        <TopNav />
-          <Switch>
-            <Route exact path="/" component={LandingPage} />
-            <Route path="/sign-up" component={SignUpPage} />
-            <Route path="/log-in" component={LogInPage} />
-            <Route path="/about-us" component={AboutUs} />
-            <Route path="/dashboard" component={Dashboard} />
-            <Route path="/create-post" component={CreatePost} />
-            <Route path="/explore-feed" component={ExploreFeedPage} />
-
-            <Route component={Error} />
-          </Switch>
-      </BrowserRouter>
-
+              <Route component={Error} />
+            </Switch>
+        </BrowserRouter>
+      </main>
     </div>
   )
 }
