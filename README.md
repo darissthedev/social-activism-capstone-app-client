@@ -87,22 +87,45 @@ Exaplore Feed Page
 
 
 ### 6. Front-end Structure - React Components Map (to do later)
-* (Example) __Index.js__ (stateless)
+* __Index.js__ (stateless)
     * __App.js__ (stateful)
-        * __LandingPage.js__ (stateful) - gets the _"prop name"_ and the _"callback prop name"_ from the __App.js__
-            * __LogIn.js__ (stateful) -
+        * __LandingPage.js__ (stateless) - 
+            * __LogIn.js__ (stateful) - interacting with users table
             * __SignUp.js__ (stateful) -
-        * __Navbar.js__ (stateless) -
+        * __AboutUs.js__ (stateless) -
+        * __Dashboard.js__ (stateless) - which compoenents will interact with other component 
+            * __TopNav.js__ (stateless)
+        * __ExploreFeed.js__ (stateless) -
+        * __CreatePost.js__ (stateful) -
 
 
 
 ### 7. Back-end Structure - Business Objects (to do later)
-* (Example) Users (database table)
+* Users (database table)
     * id (auto-generated)
-    * username (email validation)
-    * password (at least 8 chars, at least one alpha and a special character validation)
+    * fullname var char 255 (at least 3 chars)
+    * email var char 255 (email validation)
+    * password var char 255 (at least 8 chars, at least one alpha and a special character validation)
+    * accountType var char 255 (select 1 from dropdown: 'personal', 'organization')
+    * organizationName var char 255 (optional)
 
+* Posts (database table)
+    * id (auto-generated)
+    * user_id (foreign key to users table)
+    * event_title var char 255 ()
+    * event_description TEXT ()
+    * event_type var char 255 (choose from dropdown menu: 'sit in', 'silent protest', 'walk out', 'rally', etc.)
+    * event_datetime TIMESTAMPTZ (timestamp for when event takes place)
+    * event_location TEXT (address of event)
 
+* Comments (database table)
+    * id (auto-generated)
+    * posts_id (foreign key from posts table)
+    * content TEXT ()
+    * datetime TIMESTAMPTZ ()
+
+<!-- next steps
+     -->
 
 ### 8. API Documentation (to do later)
 API Documentation details:
