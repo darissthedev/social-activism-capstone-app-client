@@ -86,17 +86,17 @@ Exaplore Feed Page
 
 
 
-### 6. Front-end Structure - React Components Map (to do later)
+### 6. Front-end Structure - React Components Map (work in progress)
 * __Index.js__ (stateless)
     * __App.js__ (stateful)
-        * __LandingPage.js__ (stateless) - 
-            * __LogIn.js__ (stateful) - interacting with users table
-            * __SignUp.js__ (stateful) -
-        * __AboutUs.js__ (stateless) -
-        * __Dashboard.js__ (stateless) - which compoenents will interact with other component 
-            * __TopNav.js__ (stateless)
-        * __ExploreFeed.js__ (stateless) -
-        * __CreatePost.js__ (stateful) -
+        * __LandingPage.js__ (stateless) - leads to 'about us' and 'sing up/ log in' components (front-end)
+            * __LogIn.js__ (stateful) - interacts with users table (back-end) to validate users
+            * __SignUp.js__ (stateful) - interacts with user table (to post new user info) (back-end)
+        * __AboutUs.js__ (stateless) - leads to 'sign up' and 'log in' components (front-end)
+        * __Dashboard.js__ (stateless) - displays list of posts (front-end)
+            * __TopNav.js__ (stateless) - routes to components
+        * __ExploreFeed.js__ (stateless) - displays user posts (front-end)
+        * __CreatePost.js__ (stateful) - interacts with posts table (to post new user posts) (back-end)
 
 
 
