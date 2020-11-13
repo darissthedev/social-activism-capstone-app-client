@@ -203,7 +203,7 @@ class SignUpPage extends Component {
                             <button 
                                 type="submit">
                                 Create Account
-                             </button>
+                            </button>
                         </div>
                     </form>
                 </section>

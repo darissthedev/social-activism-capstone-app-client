@@ -27,10 +27,10 @@ class LandingPage extends Component {
                     </div>
 
                     <div className="landing-page-alt-copy" >
-                        <p>
+                        <small>
                             Already have an Account?
                             <Link to="/log-in">Log In</Link>
-                        </p>
+                        </small>
                     </div>
 
                 </section>

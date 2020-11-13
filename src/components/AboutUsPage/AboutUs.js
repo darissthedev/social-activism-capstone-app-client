@@ -20,10 +20,10 @@ class AboutUs extends Component {
                         <Link to="/sign-up" className="myButton">Join Today</Link>
                     </div>
                     <div className="about-us-page-alt-copy" >
-                        <p>
+                        <small>
                             "Have an Account?""
                             <Link to="/log-in">Log in</Link>
-                        </p>
+                        </small>
                     </div>
                 </section>
             </div>
