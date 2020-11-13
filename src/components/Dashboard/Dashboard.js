@@ -1,30 +1,37 @@
 import React, { Component } from 'react'
+import TopNav from '../TopNav/TopNav';
 
 class Dashboard extends Component {
     render() {
         return (
             <div>
-                <section className='user-dashboard-page'>
-                    <div className="user-dashboard-page-top-nav">
-                        <img src="#" alt="" width="500" height="600" />
-                        <nav>
-                            hamburger menu
-                        </nav>
-                        </div> 
-                    {/* //or span?? */}
+                <div className="user-dashboard-page-top-nav">
+                    <TopNav />        
+                </div>
+                <section className='user-dashboard-page'> 
                     <div>
-                        <img src="#" alt="" width="500" height="600" />
+                        <img 
+                            src="#" 
+                            alt="" 
+                            width="500" 
+                            height="600" 
+                        />
                     </div>
-                    <span></span>
+                    
                     <div>
-                        <p>a</p>
-                        <h3>a</h3>
-                        <p>a</p>
-                        <p>a</p>
+                        <p>Protest Type</p>
+                        <h3>Title</h3>
+                        <p>Date</p>
+                        <p>Location</p>
 
                     </div>
                     <div>
-                        <img src="#" alt="" width="500" height="600" />
+                        <img 
+                            src="#" 
+                            alt="" 
+                            width="500" 
+                            height="600" 
+                        />
                         <p></p>
                     </div>
 

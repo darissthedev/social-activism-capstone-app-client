@@ -8,7 +8,6 @@ import AboutUs from './components/AboutUsPage/AboutUs';
 import Dashboard from './components/Dashboard/Dashboard';
 import CreatePost from './components/CreatePostPage/CreatePost';
 import ExploreFeedPage from './components/ExploreFeedPage/ExploreFeedPage';
-import TopNav from './components/TopNav/TopNav';
 import Error from './components/ErrorPage/ErrorPage';
 
 
@@ -17,7 +16,6 @@ function App() {
     <div className="App">
       <main>
         <BrowserRouter>
-          <TopNav />
             <Switch>
               <Route exact path="/" component={LandingPage} />
               <Route path="/sign-up" component={SignUpPage} />
