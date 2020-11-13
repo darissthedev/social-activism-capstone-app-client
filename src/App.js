@@ -7,6 +7,7 @@ import LogInPage from './components/LogInPage/LogInPage';
 import AboutUs from './components/AboutUsPage/AboutUs';
 import Dashboard from './components/Dashboard/Dashboard';
 import CreatePost from './components/CreatePostPage/CreatePost';
+import PostDetailsPage from './components/PostDetails/PostDetailsPage';
 import ExploreFeedPage from './components/ExploreFeedPage/ExploreFeedPage';
 import Error from './components/ErrorPage/ErrorPage';
 
@@ -23,6 +24,7 @@ function App() {
               <Route path="/about-us" component={AboutUs} />
               <Route path="/dashboard" component={Dashboard} />
               <Route path="/create-post" component={CreatePost} />
+              <Route path="/post-details" component={PostDetailsPage} />
               <Route path="/explore-feed" component={ExploreFeedPage} />
 
               <Route component={Error} />

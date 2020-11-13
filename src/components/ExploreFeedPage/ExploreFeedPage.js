@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 import TopNav from '../TopNav/TopNav';
 
 class ExploreFeedPage extends Component {
@@ -30,10 +31,13 @@ class ExploreFeedPage extends Component {
                             <img 
                                 src="#" 
                                 alt="" 
-                                width="180" 
-                                height="180" 
+                                width="80" 
+                                height="80" 
                             />
                         </span>
+                        <div className="landing-page-log-in-button">
+                            <Link to="/post-details" className="myButton">View Details</Link>
+                        </div>
                     </div>
                 </section>
             </div>

@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import TopNav from '../TopNav/TopNav';
 
-class Dashboard extends Component {
+class PostDetailsPage extends Component {
     render() {
         return (
-            <div>
-                <div className="user-dashboard-page-top-nav">
+          <div>
+              <div className="user-dashboard-page-top-nav">
                     <TopNav />        
-                </div>
-                <section className='user-dashboard-page'> 
+              </div>
+
+              <section className='user-dashboard-page'> 
                     <div>
                         <img 
                             src="#" 
@@ -36,13 +37,14 @@ class Dashboard extends Component {
                     </div>
 
                     <div className="user-dashboard-page-button">
-                        <a href="/post-details" className="myButton">View Details</a>
+                        <a href="/dashboard" className="myButton">Add to Dashboard</a>
                     </div>
 
-                </section>  
-            </div>
+                </section>
+
+          </div>
         )
     }
 }
 
-export default Dashboard
+export default PostDetailsPage
