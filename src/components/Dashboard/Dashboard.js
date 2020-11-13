@@ -35,8 +35,11 @@ class Dashboard extends Component {
                         />
                     </div>
 
-                    <div className="user-dashboard-page-button">
+                    <div className="user-dashboard-view-details-button">
                         <a href="/post-details" className="myButton">View Details</a>
+                    </div>
+                    <div className="user-dashboard-remove-post-button">
+                        <a href="/" className="myButton">Remove</a>
                     </div>
 
                 </section>  
