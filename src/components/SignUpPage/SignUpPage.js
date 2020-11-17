@@ -40,6 +40,7 @@ class SignUpPage extends Component {
             Organization: ${this.state.orgName}
             Password: ${this.state.password}
             `)
+            
         } else {
             console.error(`form invalid - display error message`);
         }
