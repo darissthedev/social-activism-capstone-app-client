@@ -1,11 +1,29 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import TokenService from '../../services/token-service';
+import AuthApiService from '../../services/auth-api-service';
 
 export class LogInPage extends Component {
 
-    handleSubmit = e => {
-        e.preventDefault()
-    }
+    handleSubmitJwtAuth = ev => {
+           ev.preventDefault()
+           this.setState({ error: null })
+           const { email, password } = ev.target
+        
+           AuthApiService.postLogin({
+             email: email.value,
+             password: password.value,
+           })
+             .then(res => {
+               email.value = ''
+               password.value = ''
+               TokenService.saveAuthToken(res.authToken)
+               this.props.history.push('/dashboard')
+             })
+             .catch(res => {
+               this.setState({ error: res.error })
+             })
+         }
 
     validateInput= evt => {
         evt.preventDefault()
@@ -25,7 +43,7 @@ export class LogInPage extends Component {
                     </div>
                     <form 
                         className='log-in-page-form' 
-                        onSubmit={this.handleSubmit}
+                        onSubmit={this.handleSubmitJwtAuth}
                     >
                         <div className="form-item">
                             <label htmlFor="log-in-page-email">
@@ -35,6 +53,7 @@ export class LogInPage extends Component {
                                 type="text" 
                                 placeholder="Email Address" 
                                 required 
+                                name='email'
                                 id="log-in-page-email" 
                                 onChange={this.validateInput}
                             />
@@ -44,9 +63,10 @@ export class LogInPage extends Component {
                                 Password
                             </label>
                             <input 
-                                type="text" 
+                                type="password" 
                                 placeholder="Password" 
                                 required 
+                                name='password'
                                 id="log-in-page-password" 
                                 onChange={this.validateInput}
                             />

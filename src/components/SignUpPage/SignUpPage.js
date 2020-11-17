@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import AuthApiService from '../../services/auth-api-service';
 
 const emailRegex = RegExp(/^[a-zA-A0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
 
@@ -31,19 +32,26 @@ class SignUpPage extends Component {
 
     handleSubmit = (evt) => {
         evt.preventDefault();
-        if (formValid(this.state.formErrors)) {
-            console.log(`
-            --submitting--
-            Fullname: ${this.state.fullname}
-            Email: ${this.state.email}
-            Account Type: ${this.state.accountType}
-            Organization: ${this.state.orgName}
-            Password: ${this.state.password}
-            `)
-            
-        } else {
-            console.error(`form invalid - display error message`);
-        }
+        const { fullname, email, accountType, orgName, password } = evt.target
+        this.setState({ error: null })
+        AuthApiService.postUser({
+            fullname: fullname.value,
+            email: email.value,
+            accountType: accountType.value,
+            orgName: orgName.value,
+            password: password.value,
+        })
+        .then(user => {
+            fullname.value = ''
+            email.value = ''
+            accountType.value = ''
+            orgName.value = ''
+            password.value = ''
+            this.props.history.push('/explore-feed')
+        })
+        .catch(res => {
+            this.setState({ error: res.error })
+        })
     };
 
     handleChange = evt => {
@@ -81,15 +89,6 @@ class SignUpPage extends Component {
         }
         this.setState({ formErrors, [name]: value }, () => console.log(this.state))
     };
-
-    validateUserName(inputEmail) {
-
-    }
-
-    validatePassword(inputPassword) {
-
-    }
-
 
     render() {
         const { formErrors } = this.state
@@ -144,7 +143,7 @@ class SignUpPage extends Component {
                                 Account Type
                             </label>
                             <select 
-                                name="account-type"
+                                name="accountType"
                                 id="sign-up-page-account-type"
                                 required
                                 onChange={this.handleChange}>
@@ -164,7 +163,7 @@ class SignUpPage extends Component {
                                 type="text"
                                 placeholder="Organization Name"
                                 id="sign-up-page-org-name"
-                                name="org-name"
+                                name="orgName"
                                 onChange={this.handleChange}
                             />
                             {/* {formErrors.orgName.length > 0 && (
