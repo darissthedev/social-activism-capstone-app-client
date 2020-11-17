@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import TopNav from '../TopNav/TopNav';
+import AuthApiService from '../../services/auth-api-service';
+import TokenService from '../../services/token-service';
 
 class CreatePost extends Component {
     constructor(props){
@@ -22,8 +24,33 @@ class CreatePost extends Component {
     }
 
     handleSubmit= e => {
-        e.preventDefault()
-    }
+        e.preventDefault();
+        const { eventDate, eventTime, eventType, eventLocation, eventVisuals, eventChants, eventDescription } = e.target
+        this.setState({ error: null })
+        AuthApiService.postArticle({
+            eventDate: eventDate.value,
+            eventTime: eventTime.value,
+            eventType: eventType.value,
+            eventLocation: eventLocation.value,
+            eventVisuals: eventVisuals.value,
+            eventChants: eventChants.value,
+            eventDescription: eventDescription.value,
+        })
+        .then(user => {
+            eventDate.value = ''
+            eventTime.value = ''
+            eventType.value.value = ''
+            eventLocation.value = ''
+            eventVisuals.value = ''
+            eventChants.value = ''
+            eventDescription.value = ''
+            TokenService.saveAuthToken(user.authToken)
+            this.props.history.push('/dashboard')
+        })
+        .catch(res => {
+            this.setState({ error: res.error })
+        })
+    };
 
     handleChange= (evt) => {
         evt.preventDefault()

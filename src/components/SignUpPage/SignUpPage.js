@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import AuthApiService from '../../services/auth-api-service';
+import TokenService from '../../services/token-service';
 
 const emailRegex = RegExp(/^[a-zA-A0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
 
@@ -16,15 +17,15 @@ class SignUpPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            fullname: "",
+            full_name: "",
             email: "",
-            accountType: "",
+            account_type: "",
             orgName: "",
             password: "",
             formErrors: {
-                fullname: "",
+                full_name: "",
                 email: "",
-                accountType: "",
+                account_type: "",
                 password: ""
             }
         }
@@ -32,21 +33,22 @@ class SignUpPage extends Component {
 
     handleSubmit = (evt) => {
         evt.preventDefault();
-        const { fullname, email, accountType, orgName, password } = evt.target
+        const { full_name, email, account_type, orgName, password } = evt.target
         this.setState({ error: null })
         AuthApiService.postUser({
-            fullname: fullname.value,
+            full_name: full_name.value,
             email: email.value,
-            accountType: accountType.value,
+            account_type: account_type.value,
             orgName: orgName.value,
             password: password.value,
         })
         .then(user => {
-            fullname.value = ''
+            full_name.value = ''
             email.value = ''
-            accountType.value = ''
+            account_type.value = ''
             orgName.value = ''
             password.value = ''
+            TokenService.saveAuthToken(user.authToken)
             this.props.history.push('/explore-feed')
         })
         .catch(res => {
@@ -60,8 +62,8 @@ class SignUpPage extends Component {
         let formErrors = this.state.formErrors;
 
         switch(name){
-            case "fullname":
-                formErrors.fullname = 
+            case "full_name":
+                formErrors.full_name = 
                 value.length < 3 && value.length > 0
                     ? "minimum 3 characters requied" 
                     : "";
@@ -110,12 +112,12 @@ class SignUpPage extends Component {
                                 type="text"
                                 placeholder="Full Name"
                                 required 
-                                name="fullname"
+                                name="full_name"
                                 id="sign-up-page-name"
                                 onChange={this.handleChange} 
                                 />
-                                {formErrors.fullname.length > 0 && (
-                            <span className="errorMessage">{formErrors.fullname}</span>
+                                {formErrors.full_name.length > 0 && (
+                            <span className="errorMessage">{formErrors.full_name}</span>
                         )}
                         </div>
 
@@ -143,7 +145,7 @@ class SignUpPage extends Component {
                                 Account Type
                             </label>
                             <select 
-                                name="accountType"
+                                name="account_type"
                                 id="sign-up-page-account-type"
                                 required
                                 onChange={this.handleChange}>
