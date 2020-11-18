@@ -55,6 +55,7 @@ class CreatePost extends Component {
     handleChange= (evt) => {
         evt.preventDefault()
     }
+
     render() {
         return (
             <div>
@@ -95,6 +96,9 @@ class CreatePost extends Component {
                                 required
                                 onChange={this.handleChange}
                                 >
+                                <option value="none" selected disabled hidden>
+                                    Select One...
+                                </option>
                                 <option value="sit-in">
                                     Sit In
                                 </option>
