@@ -96,7 +96,7 @@ class CreatePost extends Component {
                                 required
                                 onChange={this.handleChange}
                                 >
-                                <option value="none" selected disabled hidden>
+                                <option value="none" disabled hidden>
                                     Select One...
                                 </option>
                                 <option value="sit-in">
