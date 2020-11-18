@@ -1,20 +1,12 @@
-import config from '../config'
+import config from '../config';
+import TokenService from './token-service';
 
 const PostsApiService = {
-  getPosts() {
-    return fetch(`${config.API_ENDPOINT}/create-post`, {
-      headers: {
-      },
-    })
-      .then(res =>
-        (!res.ok)
-          ? res.json().then(e => Promise.reject(e))
-          : res.json()
-      )
-  },
+  
   getPosts(postId) {
-    return fetch(`${config.API_ENDPOINT}/articles/${postId}`, {
+    return fetch(`${config.API_ENDPOINT}/post/${postId}`, {
       headers: {
+        'authorization': `basic ${TokenService.getAuthToken()}`,
       },
     })
       .then(res =>
@@ -24,8 +16,9 @@ const PostsApiService = {
       )
   },
   getPostComments(postId) {
-    return fetch(`${config.API_ENDPOINT}/articles/${articleId}/comments`, {
+    return fetch(`${config.API_ENDPOINT}/post/${postId}/comments`, {
       headers: {
+        'authorization': `basic ${TokenService.getAuthToken()}`,
       },
     })
       .then(res =>
@@ -39,9 +32,10 @@ const PostsApiService = {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
+        'authorization': `basic ${TokenService.getAuthToken()}`,
       },
       body: JSON.stringify({
-        post_id: articleId,
+        post_id: postId,
         text,
       }),
     })
