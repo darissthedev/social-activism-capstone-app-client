@@ -1,49 +1,52 @@
 import React, { Component } from 'react'
 import TopNav from '../TopNav/TopNav';
-import AuthApiService from '../../services/auth-api-service';
+// import AuthApiService from '../../services/auth-api-service';
 import TokenService from '../../services/token-service';
+import PostsApiService from '../../services/post-api-service';
 
 class CreatePost extends Component {
     constructor(props){
         super(props)
         this.state = {
-            eventDate: "",
-            eventTime: "",
-            eventType: "",
-            eventLocation: "",
-            eventVisuals: "",
-            eventChants: "",
-            eventDescription: "",
+            event_date: "",
+            event_time: "",
+            event_type: "",
+            event_location: "",
+            event_visuals: "",
+            event_chants: "",
+            event_description: "",
             formErrors: {
-                eventDate: "",
-                eventTime: "",
-                eventLocation: "",
-                eventDescription: ""
+                event_date: "",
+                event_time: "",
+                event_location: "",
+                event_description: ""
             }
         }
     }
 
     handleSubmit= e => {
         e.preventDefault();
-        const { eventDate, eventTime, eventType, eventLocation, eventVisuals, eventChants, eventDescription } = e.target
+        const { event_date, event_title, event_time, event_type, event_location, event_visuals, event_chants, event_description } = e.target
         this.setState({ error: null })
-        AuthApiService.postArticle({
-            eventDate: eventDate.value,
-            eventTime: eventTime.value,
-            eventType: eventType.value,
-            eventLocation: eventLocation.value,
-            eventVisuals: eventVisuals.value,
-            eventChants: eventChants.value,
-            eventDescription: eventDescription.value,
+        PostsApiService.postArticle({
+            event_title: event_title.value,
+            event_date: event_date.value,
+            event_time: event_time.value,
+            event_type: event_type.value,
+            event_location: event_location.value,
+            event_visuals: event_visuals.value,
+            event_chants: event_chants.value,
+            event_description: event_description.value,
         })
         .then(user => {
-            eventDate.value = ''
-            eventTime.value = ''
-            eventType.value.value = ''
-            eventLocation.value = ''
-            eventVisuals.value = ''
-            eventChants.value = ''
-            eventDescription.value = ''
+            event_title.value = ''
+            event_date.value = ''
+            event_time.value = ''
+            event_type.value.value = ''
+            event_location.value = ''
+            event_visuals.value = ''
+            event_chants.value = ''
+            event_description.value = ''
             TokenService.saveAuthToken(user.authToken)
             this.props.history.push('/dashboard')
         })
@@ -77,21 +80,35 @@ class CreatePost extends Component {
                             <input 
                                 type="date" 
                                 onChange={this.handleChange}
-                                name="event-date"
+                                name="event_date"
                             />
                             <input 
                                 type="time"
                                 onChange={this.handleChange} 
-                                name="event-time"
+                                name="event_time"
                             />
 
+                        </div>
+                        <div className="form-item">
+                            <label htmlFor="create-post-page-event-title">
+                                Event Title
+                            </label>
+                            <input
+                                name="event_title"
+                                id="create-post-page-event-title"
+                                required
+                                onChange={this.handleChange}
+                                type="text"
+                            >
+
+                            </input>
                         </div>
                         <div className="form-item">
                             <label htmlFor='create-post-page-event-type'>
                                 Event Type
                             </label>
                             <select 
-                                name="event-type" 
+                                name="event_type" 
                                 id="create-post-page-event-type" 
                                 required
                                 onChange={this.handleChange}
@@ -127,7 +144,7 @@ class CreatePost extends Component {
                             <label>Location</label>
                             <input 
                                 type="text" 
-                                name="event-location"
+                                name="event_location"
                                 placeholder="123 East Street San Fran..." 
                                 onChange={this.handleChange}
                             />
@@ -139,7 +156,7 @@ class CreatePost extends Component {
                                 Visuals
                         </label>
                             <select 
-                                name="event-visuals" 
+                                name="event_visuals" 
                                 id="create-post-page-choose-visuals"
                                 onChange={this.handleChange}
                             >
@@ -153,7 +170,7 @@ class CreatePost extends Component {
                         {/* //not as important */}
                             <label htmlFor="create-post-page-choose-chants">Chants</label>
                             <select 
-                                name="event-chants" 
+                                name="event_chants" 
                                 id="create-post-page-choose-chants" 
                                 onChange={this.handleChange}
                             >
@@ -169,8 +186,9 @@ class CreatePost extends Component {
                             </label>
                             <textarea 
                                 id="create-post-page-description" 
-                                name="event-description"
-                                value="Provide event details here"
+                                type='text'
+                                name="event_description"
+                                // value="Provide event details here"
                                 onChange={this.handleChange} 
                                 rows="4" 
                                 cols="50">

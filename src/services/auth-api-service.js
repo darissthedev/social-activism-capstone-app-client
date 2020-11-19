@@ -29,16 +29,6 @@ const AuthApiService = {
           : res.json()
         )
   },
-  postArticle(article){
-      return fetch(`${config.API_ENDPOINT}/auth/create-article`, {
-          method: 'POST',
-          headers: {
-              'content-type': 'application/json',
-          },
-          body: JSON.stringify(article),
-      })
-      .then()
-  }
 }
 
 export default AuthApiService
