@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import TopNav from '../TopNav/TopNav';
-import PostDetailsPage from '../PostDetails/PostDetailsPage';
-import PostsApiService from '../../services/post-api-service';
+// import PostDetailsPage from '../PostDetails/PostDetailsPage';
+// import PostsApiService from '../../services/post-api-service';
 
 
 //make fetch 
@@ -15,24 +15,34 @@ class ExploreFeedPage extends Component {
     constructor(props){
         super(props)
         this.state = {
-            posts: [],
+            posts: []
             //state updates as new posts are submitted
-        }
+        };
     }
-    componentDidMount(){
-        fetch(PostsApiService.getAllPosts)
+
+    componentDidMount = () => {
+        fetch(`http://localhost:8000/api/post/`)
         .then(res => res.json())
-        .then(
-            (result) => {
-                this.setState({
-                    posts: this.state.posts.map()
-                })
-            }
+         .then(res => {
+             console.log(res);
+             this.setState({
+                 posts: res
+             })
+         })
     }
-    //fetch 
-    //setup state with data
-    componentWillMount(){}
+
+    formatDate = () => {}
+   //orderById Descending
+   //orderByTimeStamp Descending
+
+   //timestamp code
+   //new Date(whateverstrieng)
+
+    // componentWillMount(){}
     //update
+
+
+    //getting data by page // back burner // limit to 10 most recent 
 
     render() {
         return (
@@ -41,16 +51,39 @@ class ExploreFeedPage extends Component {
                     <TopNav />        
                 </div>
                 <section className="explore-feed-pag">
-                    <PostDetailsPage />
-
                     <div className="explore-feed-page-thumbnails">
                         <img 
-                            src="#" 
+                            src="/logo192.png" 
                             alt="" 
                             width="500" 
                             height="600" 
                             />
-                        <h3>date</h3>
+                        <ul>
+                            {this.state.posts.map((post, index)=> (
+                                <li key={post.event_title + index}>
+                                    <h3>
+                                        {post.event_title}   
+                                    </h3>
+                                    <p>
+                                        {post.event_date}   
+                                    </p>
+                                    <p>
+                                        {post.event_type}   
+                                    </p>
+                                    
+                                    </li>
+                                
+                            ))}
+                        </ul>
+                        {/* // <h3>
+                        //     {this.state.posts.event_title}
+                        // </h3>
+                        // <p>
+                        //     {this.state.posts.event_date}
+                        // </p>
+                        // <p>
+                        //     {this.state.posts.event_type}
+                        // </p> */}
                         <span>
                             <p>contributor:</p>
                             <p>Dariss Harris</p>
