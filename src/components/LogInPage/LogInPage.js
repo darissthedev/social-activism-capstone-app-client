@@ -32,9 +32,14 @@ export class LogInPage extends Component {
         return (
             <div>
                 <section className='log-in-page'>
-                    <div className="log-in-page-header">
-                        <h1>YOUR SOCIAL COMMUNITY</h1>
-                    </div>
+                    <header className="log-in-page-header">
+                        <h1>YOUR
+                            <br />
+                            SOCIAL
+                            <br /> 
+                            COMMUNITY
+                        </h1>
+                    </header>
                     <div className="log-in-page-copy">
                         <p>
                             Social Activism App with reliable and accurate information

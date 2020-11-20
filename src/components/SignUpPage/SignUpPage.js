@@ -97,9 +97,10 @@ class SignUpPage extends Component {
         return (
             <div>
                 <section className='sign-up-page'>
-                    <div className="sign-up-page-header">
-                        <h1>Create Account</h1>
-                    </div>
+                    <header className="sign-up-page-header">
+                        <h1>Create Account
+                        </h1>
+                    </header>
                     <form 
                         className='sign-up-page-form'
                         onSubmit={this.handleSubmit}>

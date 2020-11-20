@@ -6,9 +6,12 @@ class AboutUs extends Component {
         return (
             <div>
                 <section className='about-us-page'>
-                    <div className="about-us-page-header">
-                        <h1>ABOUT US</h1>
-                    </div>
+                    <header className="about-us-page-header">
+                        <h1>ABOUT 
+                            <br />
+                            US
+                        </h1>
+                    </header>
                     <div className="about-us-page-copy" >
                         <p>
                             Organic wayfarers readymade, retro swag narwhal poke wolf fixie polaroid thundercats single-origin coffee fingerstache.
@@ -17,12 +20,17 @@ class AboutUs extends Component {
                         </p>
                     </div>
                     <div className="about-us-page-button">
-                        <Link to="/sign-up" className="myButton">Join Today</Link>
+                        <button 
+                            type="button"
+                            href="/sign-up" 
+                            className="about-us-sign-up-button">
+                                Join Today
+                        </button>
                     </div>
                     <div className="about-us-page-alt-copy" >
                         <small>
-                            "Have an Account?""
-                            <Link to="/log-in">Log in</Link>
+                            Have an Account?
+                            <Link to="/log-in"> Log in</Link>
                         </small>
                     </div>
                 </section>

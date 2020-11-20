@@ -6,9 +6,14 @@ class LandingPage extends Component {
         return (
             <div className="landing page">
                 <section className='landing-page'>
-                    <div className="landing-page-header">
-                        <h1>YOUR SOCIAL COMMUNITY</h1>
-                    </div>
+                    <header className="landing-page-header">
+                        <h1>YOUR 
+                            <br />
+                            SOCIAL
+                            <br /> 
+                            COMMUNITY
+                        </h1>
+                    </header>
                     <div className="landing-page-copy" >
                         <p>
                             Social Activism App with reliable and accurate information
@@ -19,17 +24,27 @@ class LandingPage extends Component {
                     </div>
 
                     <div className="landing-page-learn-more-button">
-                            <Link to="/about-us" className="myButton">Learn More</Link>
+                            <button 
+                                type="button"
+                                href="/about-us" 
+                                className="landing-page-learn-more-button">
+                                    Learn More
+                            </button>
                     </div>
 
                     <div className="landing-page-log-in-button">
-                            <Link to="/sign-up" className="myButton">Sign Up</Link>
+                            <button 
+                                type="button"
+                                href="/sign-up" 
+                                className="landing-page-log-in-button">
+                                    Sign Up
+                            </button>
                     </div>
 
                     <div className="landing-page-alt-copy" >
                         <small>
                             Already have an Account?
-                            <Link to="/log-in">Log In</Link>
+                            <a href="/log-in" className="log-in-link"> Log In</a>
                         </small>
                     </div>
 

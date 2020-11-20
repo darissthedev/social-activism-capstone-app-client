@@ -85,6 +85,69 @@ a {
 
 /* dashboard page  */
 
-/* headers */
+/* section headers */
+section header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 62px;
+  line-height: 73px;
+  position: absolute;
+  width: 480px;
+  height: 206px;
+  left: 168px;
+  top: 220px;
+}
+/* section paragraphs */
+section p {
+  position: absolute;
+  width: 490px;
+  height: 134px;
+  left: 168px;
+  top: 450px;
 
-/*  */
+}
+
+/* section buttons */
+section button {
+  position: absolute;
+  width: 392px;
+  height: 64px;
+  left: 168px;
+}
+
+section button.landing-page-learn-more-button {
+  top: 624px;
+  background: #FFFFFF;
+  border: 1px solid #FF473A;
+  box-sizing: border-box;
+  color: #ff473a;
+}
+
+section button.landing-page-log-in-button {
+  top: 706px;
+  background: #FF473A;
+  border: none;
+  color: #ffffff;
+}
+
+section button.about-us-sign-up-button {
+  top: 706px;
+  background: #FF473A;
+  border: none;
+  color: #ffffff;
+}
+
+/* section small(s) */
+section small {
+  position: absolute;
+  width: 223px;
+  height: 19px;
+  left: 168px;
+  top: 792px;
+}
+
+section small a.log-in-link {
+  color: red;
+  /* top: 792px; */
+}
