@@ -18,7 +18,9 @@ class LandingPage extends Component {
                         <p>
                             Social Activism App with reliable and accurate information
                             from your trusted social organizations, verified content updated daily.
-                        <br />
+                        
+                        <br /><br />
+                        
                             Post-ironic readymade williamsburg, meditation VHS beard bespoke hashtag etsy plaid tilde chambraSocial Activism App with reliable and accurate information from your trusted social organizations, verified content updated daily.      
                         </p>
                     </div>
@@ -39,7 +41,7 @@ class LandingPage extends Component {
                             </Link>
                     </div>
 
-                    <div className="landing-page-alt-copy" >
+                    <div className="landing-page-alt-copy landing-page-small" >
                         <small>
                             Already have an Account?
                             <Link to="/log-in" className="log-in-link"> Log In</Link>

@@ -75,7 +75,7 @@ export class LogInPage extends Component {
                                 onChange={this.validateInput}
                             />
                         </div>
-                        <div className="log-in-page-form-item">
+                        <div className="log-in-page-form-item sign-up-small">
                             <small href="/" className="log-in-forgot-password">
                                 Forgot your password?
                             </small>
@@ -89,7 +89,7 @@ export class LogInPage extends Component {
                             </button>
                             
                         </div>
-                        <div className="log-in-page-form-item">
+                        <div className="log-in-page-form-item sign-up-small">
                             <small>
                                 Don't have an account?
                                 <Link to="/sign-up" className="log-in-sign-up"> Sign Up</Link>

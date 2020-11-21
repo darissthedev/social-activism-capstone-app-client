@@ -15,7 +15,7 @@ class AboutUs extends Component {
                     <div className="about-us-page-copy" >
                         <p>
                             Organic wayfarers readymade, retro swag narwhal poke wolf fixie polaroid thundercats single-origin coffee fingerstache.
-                        <br />
+                        <br /><br />
                             Post-ironic readymade williamsburg, meditation VHS beard bespoke hashtag etsy plaid tilde chambray flexitarian humblebrag. Green juice hot chicken meh beard quinoa cliche fam truffaut organic fixie. Salvia direct trade sustainable, 90's swag banjo gastropub. Williamsburg gluten-free yr viral subway tile, pour-over put a bird on it chartreuse. Mustache messenger bag pickled pitchfork. Polaroid health goth iceland pok pok.      
                         </p>
                     </div>
@@ -26,7 +26,7 @@ class AboutUs extends Component {
                                 Join Today
                         </Link>
                     </div>
-                    <div className="about-us-page-alt-copy" >
+                    <div className="about-us-page-alt-copy about-us-small" >
                         <small>
                             Already have an Account?
                             <Link to="/log-in" className="about-us-link"> Log in</Link>

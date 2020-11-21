@@ -171,7 +171,7 @@ class SignUpPage extends Component {
                         )}
                         </div>
 
-                        <div className='sign-up-page-form-item'>
+                        <div className='sign-up-page-form-item sign-up-small'>
 
                             <small>
                                 Already have an account? 

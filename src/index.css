@@ -76,49 +76,11 @@ a {
 }
 
 
-
-/* section paragraphs */
-/* section p {
-  position: absolute;
-  width: 490px;
-  height: 134px;
-  left: 168px;
-  top: 450px;
-
-} */
-
-
-/* section small(s) */
-/* section small {
-  position: absolute;
-  width: 223px;
-  height: 19px;
-  left: 168px;
-  top: 792px;
-} */
-
-/* section small a.log-in-link {
-  color: #2F80ED;
-  line-height: 19px;
-  text-decoration-line: underline;;
-  
-} */
-
-/* section small a.about-us-link {
-  color: #2F80ED;
-  line-height: 19px;
-  text-decoration-line: underline;
-} */
-
-
-
-
-
 /* Landing Page, About Us, Log In, Sign Up Page General Layout */
 .landing-page-header, .landing-page-copy, .landing-page-learn-more-button-div, .landing-page-sign-up-button-div, .landing-page-alt-copy, .about-us-page-header, .about-us-page-copy, .about-us-page-button-div, .about-us-page-alt-copy, .sign-up-page-form-item, .sign-up-page-header, .log-in-page-header, .log-in-page-copy, .log-in-page-form-item {
-  display: flex;
+  display: flexbox;
   margin: 0;
-  padding: 20px;
+  /* padding: 20px; */
   /* border: 1px solid #000000; */
   color: #000000;
   /* margin-left: 60px; */
@@ -133,10 +95,17 @@ h1 {
   font-size: 62px;
   line-height: 73px;
   width: 480px;
-  height: 206px;
+  padding-left: 15%;
 
 }
 
+/* section Paragraphs */
+section p {
+  margin-bottom: 40px;
+  margin-left: 15%;
+  width: 490px;
+  padding-right: 15%;
+}
 
 /* Buttons */
 .landing-page-learn-more-button-div {
@@ -148,7 +117,8 @@ h1 {
   border: 1px solid #FF473A;
   box-sizing: border-box;
   color: #ff473a;
-
+  margin-left: 15%;
+  margin-bottom: 18px;
 }
 
 .landing-page-sign-up-button-div, .about-us-sign-up-button-div, .create-account-button, .log-in-log-in-button {
@@ -160,15 +130,43 @@ h1 {
   border: none;
   box-sizing: border-box;
   color: #ffffff;
+  margin-left: 15%;
+  
 }
+
+/* smalls */
+small {
+  width: 223px;
+  height: 19px;
+  
+
+}
+
+.sign-up-small, .sign-up-small, .landing-page-small, .about-us-small {
+  margin-left: 15%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.log-in-link, .about-us-link, .sign-up-log-in, .log-in-sign-up {
+  color: #2F80ED;
+  line-height: 19px;
+  text-decoration-line: underline;
+}
+
+
+
 
 /* Forms */
 .log-in-page-form input[type="text"], input[type="password"] {
   width: 392px;
   height: 64px;
+  margin-left: 15%;
 }
 .sign-up-page-form input[type="text"], select {
   width: 392px;
   height: 64px;
+  margin-left: 15%;
 }
 
