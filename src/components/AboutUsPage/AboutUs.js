@@ -29,7 +29,7 @@ class AboutUs extends Component {
                     <div className="about-us-page-alt-copy" >
                         <small>
                             Already have an Account?
-                            <a href="/log-in" className="about-us-link"> Log in</a>
+                            <Link to="/log-in" className="about-us-link"> Log in</Link>
                         </small>
                     </div>
                 </section>

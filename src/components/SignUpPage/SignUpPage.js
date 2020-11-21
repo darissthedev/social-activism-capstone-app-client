@@ -5,13 +5,13 @@ import TokenService from '../../services/token-service';
 
 const emailRegex = RegExp(/^[a-zA-A0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
 
-const formValid = formErrors => {
-    let valid = true;
-    Object.values(formErrors).forEach(val => {
-        val.length > 0 && (valid = false);
-    });
-    return valid;
-}
+// const formValid = formErrors => {
+//     let valid = true;
+//     Object.values(formErrors).forEach(val => {
+//         val.length > 0 && (valid = false);
+//     });
+//     return valid;
+// }
 
 class SignUpPage extends Component {
     constructor(props) {

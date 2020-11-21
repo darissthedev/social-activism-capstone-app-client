@@ -75,29 +75,8 @@ a {
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-/* button section */
-/* callout each button  */
-/* target general button , all buttons are having this format, set height, width, etc padding margin */
 
-/* specifically style  */
 
-/* form section */
-
-/* dashboard page  */
-
-/* section headers */
-/* section header h1 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 62px;
-  line-height: 73px;
-  position: absolute;
-  width: 480px;
-  height: 206px;
-  left: 168px;
-  top: 220px;
-} */
 /* section paragraphs */
 /* section p {
   position: absolute;
@@ -108,104 +87,6 @@ a {
 
 } */
 
-
-/* section button {
-  position: absolute;
-  width: 392px;
-  height: 64px;
-  left: 168px;
-} */
-
-/* BUTTONS */
-/* Landing Page buttons */
-
-/* .landing-page-learn-more-button-div {
-  display: flex;
-} */
-/* 
-.landing-page-learn-more-button {
-  font-size: 16px;
-  font-family: Roboto;
-  position: absolute;
-  width: 392px;
-  height: 64px;
-  left: 168px;
-  top: 624px;
-  background: #FFFFFF;
-  border: 1px solid #FF473A;
-  box-sizing: border-box;
-  color: #ff473a;
-} */
-
-/* .landing-page-log-in-button {
-  position: absolute;
-  width: 392px;
-  height: 64px;
-  left: 168px;
-  top: 706px;
-  background: #FF473A;
-  border: none;
-  color: #ffffff;
-} */
-
-/* About Us Page buttons */
-/* .about-us-sign-up-button {
-  position: absolute;
-  width: 392px;
-  height: 64px;
-  left: 168px;
-  top: 706px;
-  background: #FF473A;
-  border: none;
-  color: #ffffff;
-} */
-
-/* Sign Up Page button */
-/* .create-account-button {
-  position: absolute;
-  width: 392px;
-  height: 64px;
-  left: 168px;
-  top: 706px;
-  background: #FF473A;
-  border: none;
-  color: #ffffff;
-} */
-
-/* Log In Page button */
-/* .log-in-sign-up {
-  position: absolute;
-  width: 392px;
-  height: 64px;
-  left: 168px;
-  top: 706px;
-  background: #FF473A;
-  border: none;
-  color: #ffffff;
-} */
-
-/* Dashboard Page button */
-/* .dashboard-view-details-button {
-  position: absolute;
-  width: 392px;
-  height: 64px;
-  left: 168px;
-  top: 706px;
-  background: #FF473A;
-  border: none;
-  color: #ffffff;
-} */
-
-/* .dashboard-remove-button {
-  position: absolute;
-  width: 392px;
-  height: 64px;
-  left: 168px;
-  top: 624px;
-  background: #FF473A;
-  border: none;
-  color: #ffffff;
-} */
 
 /* section small(s) */
 /* section small {
@@ -244,7 +125,17 @@ a {
 }
 
 
+/* H1 Headers */
+h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 62px;
+  line-height: 73px;
+  width: 480px;
+  height: 206px;
 
+}
 
 
 /* Buttons */
