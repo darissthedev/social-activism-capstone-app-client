@@ -104,11 +104,7 @@ class SignUpPage extends Component {
                     <form 
                         className='sign-up-page-form'
                         onSubmit={this.handleSubmit}>
-                        <div className='form-item'>
-                            <label 
-                                htmlFor='sign-up-page-name'>
-                                Full Name
-                            </label>
+                        <div className='sign-up-page-form-item'>
                             <input 
                                 type="text"
                                 placeholder="Full Name"
@@ -122,11 +118,7 @@ class SignUpPage extends Component {
                         )}
                         </div>
 
-                        <div className='form-item'>
-                            <label 
-                                htmlFor='sign-up-page-email'>
-                                Email Address
-                            </label>
+                        <div className='sign-up-page-form-item'>
                             <input  
                                 type="text"
                                 placeholder="Email Address"
@@ -140,28 +132,19 @@ class SignUpPage extends Component {
                         )}
                         </div>
 
-                        <div className='form-item'>
-                            <label 
-                                htmlFor='sign-up-page-account-type'>
-                                Account Type
-                            </label>
+                        <div className='sign-up-page-form-item'>
                             <select 
                                 name="account_type"
                                 id="sign-up-page-account-type"
                                 required
                                 onChange={this.handleChange}>
-                                <option value="">A</option>
-                                <option value="">B</option>
-                                <option value="">C</option>
-                                <option value="">D</option>
+                                <option value="none" hidden> Account Type...</option>
+                                <option value="activist">Activist</option>
+                                <option value="organization">Organization</option>
                             </select>
                         </div>
 
-                        <div className='form-item'>
-                            <label 
-                                htmlFor='sign-up-page-org-name'>
-                                Organization Name
-                            </label>
+                        <div className='sign-up-page-form-item'>
                             <input 
                                 type="text"
                                 placeholder="Organization Name"
@@ -174,11 +157,7 @@ class SignUpPage extends Component {
                         )} */}
                         </div>
 
-                        <div className='form-item'>
-                            <label 
-                                htmlFor='sign-up-page-password'>
-                                Password
-                            </label>
+                        <div className='sign-up-page-form-item'>
                             <input 
                                 type="password"
                                 placeholder="Password"
@@ -192,18 +171,17 @@ class SignUpPage extends Component {
                         )}
                         </div>
 
-                        <div className='form-item'>
+                        <div className='sign-up-page-form-item'>
 
                             <small>
-                                Already have an account?
-                                <Link to="/log-in">
-                                    Log In
-                                </Link>
+                                Already have an account? 
+                                <Link to="/log-in" className="sign-up-log-in"> Log In</Link>
                             </small>
                         </div>
 
-                        <div className='form-item'>
+                        <div className='sign-up-page-form-item'>
                             <button 
+                                className="create-account-button"
                                 type="submit">
                                 Create Account
                             </button>

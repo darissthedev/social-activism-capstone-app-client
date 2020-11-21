@@ -48,12 +48,11 @@ export class LogInPage extends Component {
                     </div>
                     <form 
                         className='log-in-page-form' 
-                        onSubmit={this.handleSubmitJwtAuth}
-                    >
-                        <div className="form-item">
-                            <label htmlFor="log-in-page-email">
+                        onSubmit={this.handleSubmitJwtAuth}>
+                        <div className="log-in-page-form-item">
+                            {/* <label htmlFor="log-in-page-email">
                                 Email Address
-                            </label>
+                            </label> */}
                             <input 
                                 type="text" 
                                 placeholder="Email Address" 
@@ -63,10 +62,10 @@ export class LogInPage extends Component {
                                 onChange={this.validateInput}
                             />
                         </div>
-                        <div className="form-item">
-                            <label htmlFor="log-in-page-password">
+                        <div className="log-in-page-form-item">
+                            {/* <label htmlFor="log-in-page-password">
                                 Password
-                            </label>
+                            </label> */}
                             <input 
                                 type="password" 
                                 placeholder="Password" 
@@ -76,22 +75,24 @@ export class LogInPage extends Component {
                                 onChange={this.validateInput}
                             />
                         </div>
-                        <div className="form-item">
-                            <small href="/">
+                        <div className="log-in-page-form-item">
+                            <small href="/" className="log-in-forgot-password">
                                 Forgot your password?
                             </small>
                         </div>
 
-                        <div className="form-item">
-                            <button type="submit">
+                        <div className="log-in-page-form-item">
+                            <button 
+                                type="submit"
+                                className="log-in-log-in-button">
                                 Log In
                             </button>
                             
                         </div>
-                        <div className="form-item">
+                        <div className="log-in-page-form-item">
                             <small>
                                 Don't have an account?
-                                <Link to="/sign-up">Sign Up</Link>
+                                <Link to="/sign-up" className="log-in-sign-up"> Sign Up</Link>
                             </small>
                         </div>
                 

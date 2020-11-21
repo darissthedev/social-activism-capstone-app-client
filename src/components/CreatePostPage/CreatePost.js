@@ -73,7 +73,7 @@ class CreatePost extends Component {
                         </div>
 
                     <form 
-                        className='sign-up-page-form'
+                        className='create-post-page-form'
                         onSubmit={this.handleSubmit}
                     >
                         <div className="form-item">

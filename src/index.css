@@ -86,7 +86,7 @@ a {
 /* dashboard page  */
 
 /* section headers */
-section header {
+/* section header h1 {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -97,57 +97,187 @@ section header {
   height: 206px;
   left: 168px;
   top: 220px;
-}
+} */
 /* section paragraphs */
-section p {
+/* section p {
   position: absolute;
   width: 490px;
   height: 134px;
   left: 168px;
   top: 450px;
 
-}
+} */
 
-/* section buttons */
-section button {
+
+/* section button {
   position: absolute;
   width: 392px;
   height: 64px;
   left: 168px;
-}
+} */
 
-section button.landing-page-learn-more-button {
+/* BUTTONS */
+/* Landing Page buttons */
+
+/* .landing-page-learn-more-button-div {
+  display: flex;
+} */
+/* 
+.landing-page-learn-more-button {
+  font-size: 16px;
+  font-family: Roboto;
+  position: absolute;
+  width: 392px;
+  height: 64px;
+  left: 168px;
   top: 624px;
   background: #FFFFFF;
   border: 1px solid #FF473A;
   box-sizing: border-box;
   color: #ff473a;
-}
+} */
 
-section button.landing-page-log-in-button {
+/* .landing-page-log-in-button {
+  position: absolute;
+  width: 392px;
+  height: 64px;
+  left: 168px;
   top: 706px;
   background: #FF473A;
   border: none;
   color: #ffffff;
-}
+} */
 
-section button.about-us-sign-up-button {
+/* About Us Page buttons */
+/* .about-us-sign-up-button {
+  position: absolute;
+  width: 392px;
+  height: 64px;
+  left: 168px;
   top: 706px;
   background: #FF473A;
   border: none;
   color: #ffffff;
-}
+} */
+
+/* Sign Up Page button */
+/* .create-account-button {
+  position: absolute;
+  width: 392px;
+  height: 64px;
+  left: 168px;
+  top: 706px;
+  background: #FF473A;
+  border: none;
+  color: #ffffff;
+} */
+
+/* Log In Page button */
+/* .log-in-sign-up {
+  position: absolute;
+  width: 392px;
+  height: 64px;
+  left: 168px;
+  top: 706px;
+  background: #FF473A;
+  border: none;
+  color: #ffffff;
+} */
+
+/* Dashboard Page button */
+/* .dashboard-view-details-button {
+  position: absolute;
+  width: 392px;
+  height: 64px;
+  left: 168px;
+  top: 706px;
+  background: #FF473A;
+  border: none;
+  color: #ffffff;
+} */
+
+/* .dashboard-remove-button {
+  position: absolute;
+  width: 392px;
+  height: 64px;
+  left: 168px;
+  top: 624px;
+  background: #FF473A;
+  border: none;
+  color: #ffffff;
+} */
 
 /* section small(s) */
-section small {
+/* section small {
   position: absolute;
   width: 223px;
   height: 19px;
   left: 168px;
   top: 792px;
+} */
+
+/* section small a.log-in-link {
+  color: #2F80ED;
+  line-height: 19px;
+  text-decoration-line: underline;;
+  
+} */
+
+/* section small a.about-us-link {
+  color: #2F80ED;
+  line-height: 19px;
+  text-decoration-line: underline;
+} */
+
+
+
+
+
+/* Landing Page, About Us, Log In, Sign Up Page General Layout */
+.landing-page-header, .landing-page-copy, .landing-page-learn-more-button-div, .landing-page-sign-up-button-div, .landing-page-alt-copy, .about-us-page-header, .about-us-page-copy, .about-us-page-button-div, .about-us-page-alt-copy, .sign-up-page-form-item, .sign-up-page-header, .log-in-page-header, .log-in-page-copy, .log-in-page-form-item {
+  display: flex;
+  margin: 0;
+  padding: 20px;
+  /* border: 1px solid #000000; */
+  color: #000000;
+  /* margin-left: 60px; */
 }
 
-section small a.log-in-link {
-  color: red;
-  /* top: 792px; */
+
+
+
+
+/* Buttons */
+.landing-page-learn-more-button-div {
+  font-size: 16px;
+  font-family: Roboto;
+  width: 392px;
+  height: 64px;
+  background: #FFFFFF;
+  border: 1px solid #FF473A;
+  box-sizing: border-box;
+  color: #ff473a;
+
 }
+
+.landing-page-sign-up-button-div, .about-us-sign-up-button-div, .create-account-button, .log-in-log-in-button {
+  font-size: 16px;
+  font-family: Roboto;
+  width: 392px;
+  height: 64px;
+  background: #FF473A;
+  border: none;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+/* Forms */
+.log-in-page-form input[type="text"], input[type="password"] {
+  width: 392px;
+  height: 64px;
+}
+.sign-up-page-form input[type="text"], select {
+  width: 392px;
+  height: 64px;
+}
+

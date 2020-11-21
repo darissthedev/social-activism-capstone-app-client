@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import TopNav from '../TopNav/TopNav';
+import { Link } from 'react-router-dom';
 
 class Dashboard extends Component {
     render() {
@@ -35,11 +36,11 @@ class Dashboard extends Component {
                         />
                     </div>
 
-                    <div className="user-dashboard-view-details-button">
-                        <a href="/post-details" className="myButton">View Details</a>
+                    <div className="dashboard-view-details-button-div">
+                        <Link to="/post-details" className="dashboard-view-details-button">View Details</Link>
                     </div>
-                    <div className="user-dashboard-remove-post-button">
-                        <a href="/" className="myButton">Remove</a>
+                    <div className="dashboard-remove-button-div">
+                        <Link to="/" className="dashboard-remove-button">Remove</Link>
                     </div>
 
                 </section>  

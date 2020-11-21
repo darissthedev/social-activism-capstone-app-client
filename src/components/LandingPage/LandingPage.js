@@ -22,29 +22,27 @@ class LandingPage extends Component {
                             Post-ironic readymade williamsburg, meditation VHS beard bespoke hashtag etsy plaid tilde chambraSocial Activism App with reliable and accurate information from your trusted social organizations, verified content updated daily.      
                         </p>
                     </div>
-
-                    <div className="landing-page-learn-more-button">
-                            <button 
-                                type="button"
-                                href="/about-us" 
+                    <div className="landing-page-learn-more-button-div">
+                            <Link 
+                                to="/about-us" 
                                 className="landing-page-learn-more-button">
                                     Learn More
-                            </button>
+                            </Link>
+                            
                     </div>
 
-                    <div className="landing-page-log-in-button">
-                            <button 
-                                type="button"
-                                href="/sign-up" 
-                                className="landing-page-log-in-button">
+                    <div className="landing-page-sign-up-button-div">
+                            <Link 
+                                to="/sign-up" 
+                                className="landing-page-sign-up-button">
                                     Sign Up
-                            </button>
+                            </Link>
                     </div>
 
                     <div className="landing-page-alt-copy" >
                         <small>
                             Already have an Account?
-                            <a href="/log-in" className="log-in-link"> Log In</a>
+                            <Link to="/log-in" className="log-in-link"> Log In</Link>
                         </small>
                     </div>
 
