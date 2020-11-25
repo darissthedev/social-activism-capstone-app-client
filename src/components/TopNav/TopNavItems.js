@@ -1,33 +1,33 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function TopNavItems (props) {
     
         return (
-            <nav className="navbar">
-                <ul className="navbar-nav">
+            <div className="navlinkdiv ">
+                <ul className="navlinks nav">
                     <li>
-                        <Link to="/dashoboard">
+                        <NavLink to="/dashboard">
                             Dashboard
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/explore-feed">
+                        <NavLink to="/explore-feed">
                             Explore Feed
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/create-post">
+                        <NavLink to="/create-post">
                             Create a Post
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/about-us">
+                        <NavLink to="/about-us">
                             About Us
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
-            </nav>
+            </div>
         )
     }
 

@@ -37,7 +37,7 @@ class LandingPage extends Component {
                             <Link 
                                 to="/sign-up" 
                                 className="landing-page-sign-up-button">
-                                    Sign Up
+                                    Register
                             </Link>
                     </div>
 

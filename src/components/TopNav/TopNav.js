@@ -25,29 +25,28 @@ class TopNav extends Component {
     render() {
         return (
             <>
-                <img
-                    src=""
-                    alt=""
-                    width="120"
-                    height="80"
-                />
+            
+                <div className="topnav">
+                    <h3 className="logo">
+                        YOUR
+                        <br />
+                        SOCIAL
+                        <br />
+                        COMMUNITY
+                    </h3>
+                <div className="hamburger">
+                    {this.hamburgerExpand()}
+                        <button onClick={() => this.setState({hamburgerOpen: !this.state.hamburgerOpen})}>
+                            {/* ☰ */}
+                            
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
 
-                {this.hamburgerExpand()}
-                <button onClick={() => this.setState({hamburgerOpen: !this.state.hamburgerOpen})}>
-                    ☰
-                </button>
-
-                {/* if hb open is false show nothing, if tru show topnav */}
-                {/* <div className="container" onClick={this.menuExpands}>
-                    <div className="bar1"></div>
-                    <div className="bar2"></div>
-                    <div className="bar3"></div>
-                </div> */}
-                {/* // THIS IS HAMBURGER MENU */}
-
-                {/* <nav className="navbar">
-                <ul className="navbar-"></ul>
-            </nav> */}
+                        </button>
+                </div>
+                
+                </div>
             </>
         )
     }
