@@ -306,3 +306,50 @@ contributor-image {
   text-decoration: none;
   
 }
+
+
+/* explore page */
+.explore-feed-page {
+  margin-top: 120px;
+  padding: 20px;
+  align-content: center;
+  display: flex;
+}
+
+.explore-feed-page-thumbnails li {
+  list-style: none;
+  margin-left:0;
+}
+
+.explore-feed-page h6 {
+  color: #828282;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 6px;
+  margin-top: 40px;
+}
+
+.explore-feed-page h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25.5px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.explore-feed-page h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 22px;
+  color: #EB5757;
+  margin-top: 0;
+  margin-bottom: 15px;
+}

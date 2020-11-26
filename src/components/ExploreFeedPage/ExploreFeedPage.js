@@ -50,40 +50,31 @@ class ExploreFeedPage extends Component {
                 <div className="explore-feed-page-top-nav">
                     <TopNav />        
                 </div>
-                <section className="explore-feed-pag">
+                <section className="explore-feed-page">
                     <div className="explore-feed-page-thumbnails">
                         <img 
-                            src="/logo192.png" 
+                            src="#" 
                             alt="" 
-                            width="500" 
-                            height="600" 
+                            width="670" 
+                            height="455" 
                             />
                         <ul>
                             {this.state.posts.map((post, index)=> (
                                 <li key={post.event_title + index}>
+                                    <h6>
+                                        {post.event_type}   
+                                    </h6>
                                     <h3>
                                         {post.event_title}   
                                     </h3>
-                                    <p>
+                                    <h4>
                                         {post.event_date}   
-                                    </p>
-                                    <p>
-                                        {post.event_type}   
-                                    </p>
+                                    </h4>
                                     
                                     </li>
                                 
                             ))}
                         </ul>
-                        {/* // <h3>
-                        //     {this.state.posts.event_title}
-                        // </h3>
-                        // <p>
-                        //     {this.state.posts.event_date}
-                        // </p>
-                        // <p>
-                        //     {this.state.posts.event_type}
-                        // </p> */}
                         <span>
                             <p>contributor:</p>
                             <p>Dariss Harris</p>
