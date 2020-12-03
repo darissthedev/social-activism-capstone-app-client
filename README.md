@@ -4,7 +4,7 @@ Social Activism App with reliable and accurate information from your trusted soc
 
 
 ### 1. Working Prototype (to do later)
-You can access a working prototype of the React app here: https://your-app-client.herokuapp.com/ and Node app here: https://your-app-server.herokuapp.com/
+You can access a working prototype of the React app here: https://your-app-client.herokuapp.com/ and Node app here: https://social-activism-capstone-app.herokuapp.com/
 
 
 
