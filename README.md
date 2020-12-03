@@ -3,8 +3,8 @@ Social Activism App with reliable and accurate information from your trusted soc
 
 
 
-### 1. Working Prototype (to do later)
-You can access a working prototype of the React app here: https://your-app-client.herokuapp.com/ and Node app here: https://social-activism-capstone-app.herokuapp.com/
+### 1. Working Prototype (done)
+You can access a working prototype of the React app here: https://wokeapp-k7nkbvzbq.vercel.app/ and Node app here: https://social-activism-capstone-app.herokuapp.com/
 
 
 
@@ -86,7 +86,7 @@ Exaplore Feed Page
 
 
 
-### 6. Front-end Structure - React Components Map (work in progress)
+### 6. Front-end Structure - React Components Map (done)
 * __Index.js__ (stateless)
     * __App.js__ (stateful)
         * __LandingPage.js__ (stateless) - leads to 'about us' and 'sing up/ log in' components (front-end)
@@ -100,7 +100,7 @@ Exaplore Feed Page
 
 
 
-### 7. Back-end Structure - Business Objects (to do later)
+### 7. Back-end Structure - Business Objects (done)
 * Users (database table)
     * id (auto-generated)
     * fullname var char 255 (at least 3 chars)
