@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import TopNav from '../TopNav/TopNav';
+import config from '../../config'
+const { API_ENDPOINT } = config
 // import PostDetailsPage from '../PostDetails/PostDetailsPage';
 // import PostsApiService from '../../services/post-api-service';
 
@@ -21,7 +23,7 @@ class ExploreFeedPage extends Component {
     }
 
     componentDidMount = () => {
-        fetch(`http://localhost:8000/api/post/`)
+        fetch(`${API_ENDPOINT}/post`)
         .then(res => res.json())
          .then(res => {
              console.log(res);
