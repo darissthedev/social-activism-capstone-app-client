@@ -31,7 +31,7 @@ export class LogInPage extends Component {
     render() {
         return (
             <div>
-                <section className='log-in-page'>
+                <section className='page-content'>
                     <header className="log-in-page-header">
                         <h1>YOUR
                             <br />
@@ -76,23 +76,20 @@ export class LogInPage extends Component {
                             />
                         </div>
                         <div className="log-in-page-form-item sign-up-small">
-                            <small href="/" className="log-in-forgot-password">
+                            <small>
                                 Forgot your password?
+                                <Link to="/" className="page-link"> Check here</Link>
                             </small>
                         </div>
 
-                        <div className="log-in-page-form-item">
-                            <button 
-                                type="submit"
-                                className="log-in-log-in-button">
-                                Log In
-                            </button>
-                            
-                        </div>
-                        <div className="log-in-page-form-item sign-up-small">
+                        <button type="submit" className="red">
+                            Log In
+                        </button>
+
+                        <div className="page-small">
                             <small>
                                 Don't have an account?
-                                <Link to="/sign-up" className="log-in-sign-up"> Sign Up</Link>
+                                <Link to="/sign-up" className="page-link"> Sign Up</Link>
                             </small>
                         </div>
                 

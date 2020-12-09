@@ -5,7 +5,7 @@ class AboutUs extends Component {
     render() {
         return (
             <div>
-                <section className='about-us-page'>
+                <section className='page-content'>
                     <header className="about-us-page-header">
                         <h1>ABOUT 
                             <br />
@@ -19,17 +19,15 @@ class AboutUs extends Component {
                             Post-ironic readymade williamsburg, meditation VHS beard bespoke hashtag etsy plaid tilde chambray flexitarian humblebrag. Green juice hot chicken meh beard quinoa cliche fam truffaut organic fixie. Salvia direct trade sustainable, 90's swag banjo gastropub. Williamsburg gluten-free yr viral subway tile, pour-over put a bird on it chartreuse. Mustache messenger bag pickled pitchfork. Polaroid health goth iceland pok pok.      
                         </p>
                     </div>
-                    <div className="about-us-sign-up-button-div">
-                        <Link 
-                            to="/sign-up" 
-                            className="about-us-sign-up-button">
-                                Join Today
-                        </Link>
-                    </div>
-                    <div className="about-us-page-alt-copy about-us-small" >
+                    <Link to="/sign-up">
+                        <button className="red">
+                            Join Today
+                        </button>
+                    </Link>
+                    <div className="page-small" >
                         <small>
                             Already have an Account?
-                            <Link to="/log-in" className="about-us-link"> Log in</Link>
+                            <Link to="/log-in" className="page-link"> Log in</Link>
                         </small>
                     </div>
                 </section>
