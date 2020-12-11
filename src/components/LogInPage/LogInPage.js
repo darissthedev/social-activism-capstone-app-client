@@ -65,9 +65,7 @@ export class LogInPage extends Component {
                             />
                         </div>
                         <div className="log-in-page-form-item">
-                            {/* <label htmlFor="log-in-page-password">
-                                Password
-                            </label> */}
+                            
                             <input 
                                 type="password" 
                                 placeholder="Password" 

@@ -47,11 +47,6 @@ class Dashboard extends Component {
                             </button>
                         </Link>
                     
-                        {/* <Link to="/">
-                            <button className="red">
-                                Remove
-                            </button>
-                        </Link> */}
                     </div>
 
                 </section>  

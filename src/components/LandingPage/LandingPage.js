@@ -38,17 +38,7 @@ class LandingPage extends Component {
                             Register
                         </button>
                     </Link>
-                    {/* <div className="landing-page-learn-more-button-div">
-                            
-                    </div> */}
-
-                    {/* <div className="landing-page-sign-up-button-div">
-                            <Link 
-                                to="/sign-up" 
-                                className="landing-page-sign-up-button">
-                                    Register
-                            </Link>
-                    </div> */}
+                
 
                     <div className="page-small" >
                         <small>
