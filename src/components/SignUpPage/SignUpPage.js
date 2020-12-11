@@ -96,7 +96,9 @@ class SignUpPage extends Component {
         const { formErrors } = this.state
         return (
             <div>
+                <div className="landing"></div>
                 <section className='sign-up-page'>
+                    <div className="page-content">
                     <header className="sign-up-page-header">
                         <h1>Create Account
                         </h1>
@@ -181,12 +183,13 @@ class SignUpPage extends Component {
 
                         <div className='sign-up-page-form-item'>
                             <button 
-                                className="create-account-button"
+                                className="red"
                                 type="submit">
                                 Create Account
                             </button>
                         </div>
                     </form>
+                    </div>
                 </section>
             </div>
         )

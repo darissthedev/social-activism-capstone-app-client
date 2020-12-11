@@ -31,7 +31,9 @@ export class LogInPage extends Component {
     render() {
         return (
             <div>
-                <section className='page-content'>
+                <div className="landing"></div>
+                <section className='login-page'>
+                    <div className="page-content">
                     <header className="log-in-page-header">
                         <h1>YOUR
                             <br />
@@ -94,6 +96,7 @@ export class LogInPage extends Component {
                         </div>
                 
                     </form>
+                    </div>
                 </section>
             </div>
         )

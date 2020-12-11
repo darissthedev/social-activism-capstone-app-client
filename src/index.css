@@ -16,7 +16,7 @@ body {
 
 }
 
-.landing-page {
+.landing-page, .about-page, .sign-up-page, .login-page {
   background-color: rgb(212, 135, 154); /* Fallback color */
   background-color: rgba(226, 134, 134, 0.4); /* Black w/opacity/see-through */
   color: white;
@@ -200,16 +200,16 @@ small {
 
 
 
-/* External Forms */
+/* Pre Login/SignUp External Forms */
 .log-in-page-form input[type="text"], input[type="password"] {
   width: 392px;
   height: 64px;
-  margin-left: 15%;
+  /* margin-left: 15%; */
 }
 .sign-up-page-form input[type="text"], select {
   width: 392px;
   height: 64px;
-  margin-left: 15%;
+  /* margin-left: 15%; */
 }
 
 /* Top Nav */

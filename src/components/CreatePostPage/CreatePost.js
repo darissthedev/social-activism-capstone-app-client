@@ -201,7 +201,7 @@ class CreatePost extends Component {
                         <div className='form-item'>
                             <button 
                                 type="submit"
-                                className="create-post-page-button"
+                                className="red"
                             >
                                 Submit for Review
                              </button>
