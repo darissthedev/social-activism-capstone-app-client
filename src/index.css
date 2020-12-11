@@ -62,8 +62,8 @@ code {
 /* media queries */
 
 @media screen and (max-width: 480px) {
-  body {
-    background-color: lightblue;
+  .landing {
+    /* background-color: lightblue; */
   }
 }
 
