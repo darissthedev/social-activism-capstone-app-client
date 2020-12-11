@@ -12,8 +12,14 @@ body {
   filter: blur(8px);
   -webkit-filter: blur(8px);
   background-repeat: no-repeat;
-
-
+}
+.create-post-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;
 }
 
 .landing-page, .about-page, .sign-up-page, .login-page {
@@ -28,9 +34,11 @@ body {
   width: 80%;
   padding: 20px;
 }
-.page-content {
+
+/* .page-content {
   margin-left: 15%;
-}
+} */
+
 .landing-page-learn-more-button-div a {
   color: black;
 }
@@ -53,15 +61,17 @@ code {
 
 /* media queries */
 
-/* Landing Page, About Us, Log In, Sign Up Page General Layout */
-/* .landing-page-header, .landing-page-copy, .landing-page-learn-more-button-div, .landing-page-sign-up-button-div, .landing-page-alt-copy, .about-us-page-header, .about-us-page-copy, .about-us-page-button-div, .about-us-page-alt-copy, .sign-up-page-form-item, .sign-up-page-header, .log-in-page-header, .log-in-page-copy, .log-in-page-form-item {
-  z-index: 2;
-  top: 50%;
-  display: flexbox;
-  margin: 0;
-  color: #000000;
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightblue;
+  }
+}
 
-} */
+@media screen and (min-width: 800px){
+  body {
+
+  }
+}
 
 
 /* H1 Headers */
@@ -73,28 +83,18 @@ h1 {
   line-height: 73px;
   width: 480px;
   /* padding-left: 15%; */
-
 }
 
-/* section Paragraphs */
-section p {
-  margin-bottom: 40px;
-  /* margin-left: 15%; */
-  width: 490px;
-  padding-right: 15%;
+.page-header {
+  color: #FF473A;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: Roboto;
 }
 
 /* Buttons */
-/* .white {
-  width: 392px;
-  height: 64px;
-  background: #FFFFFF;
-  border: 1px solid #FF473A;
-  box-sizing: border-box;
-  margin-left: 15%;
-  margin-bottom: 18px;
-  
-} */
 .red {
   background: #FF473A;
   color: #fff;
@@ -123,6 +123,7 @@ section p {
 }
 .white {
   background: white;
+  border: 2px solid #FF473A;
   color: #FF473A;
   font-weight: 700;
   font-size: 16px;
@@ -156,25 +157,6 @@ section p {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-/* .landing-page-sign-up-button-div, .about-us-sign-up-button-div, .create-account-button, .log-in-log-in-button, .landing-page-sign-up-button {
-  width: 392px;
-  height: 64px;
-  background: #FF473A;
-  border: none;
-  font-size: 16px;
-  font-family: Roboto;
-  color: #fff;
-  box-sizing: border-box;
-  margin-left: 15%; 
-  text-decoration: none;
-}
-landing-page-sign-up-button-div a, .about-us-sign-up-button-div a, .create-account-button a, .log-in-log-in-button a {
-  font-size: 16px;
-  font-family: Roboto;
-  color: #ffffff;
-  text-decoration: none;
-} */
-
 
 /* smalls */
 small {
@@ -256,6 +238,7 @@ small {
   font-size: 15.5px;
   line-height: 18px;
   color: #000000;
+  text-decoration: none;
 }
 .navlinks ul { 
   list-style: none;
@@ -316,7 +299,7 @@ img {
 .user-dashboard-page h5 {
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 12px;
   line-height: 14px;
   color: #828282;
@@ -345,53 +328,25 @@ img {
   margin-top: 0;
 }
 
-.user-dashboard-page p {
-  color: blue;
-  margin-left: 0;
+.button-group {
+  align-content: center;
+   /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
 }
 
 
-.dashboard-event {
 
-}
+
 
 
 /* dashboard images */
 .post-image {
-  height: 500px;
+  align-content: center;
 }
 
-contributor-image {
+.contributor-image {
   border-radius: 300px;
-
-}
-
-/* dashboard buttons */
-.dashboard-view-details-button-div {
-  width: 392px;
-  height: 64px;
-  background: #FFFFFF;
-  border: 1px solid #FF473A;
-  box-sizing: border-box;
-  margin-bottom: 18px;
-}
-
-.dashboard-view-details-button {
-  text-decoration: none;
-  color: #ff473a;
-}
-
-.dashboard-remove-button-div, .dashboard-remove-button-div a {
-  font-size: 16px;
-  font-family: Roboto;
-  width: 392px;
-  height: 64px;
-  background: #FF473A;
-  border: none;
-  box-sizing: border-box;
-  color: #ffffff;
-  text-decoration: none;
-  
 }
 
 

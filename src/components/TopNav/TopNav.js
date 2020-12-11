@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import TopNavItems from './TopNavItems'
 
 
@@ -27,6 +28,7 @@ class TopNav extends Component {
             <>
             
                 <div className="topnav">
+                    <Link to="/dashboard" className="logo">
                     <h3 className="logo">
                         YOUR
                         <br />
@@ -34,6 +36,7 @@ class TopNav extends Component {
                         <br />
                         COMMUNITY
                     </h3>
+                    </Link>
                 <div className="hamburger">
                     {this.hamburgerExpand()}
                         <button onClick={() => this.setState({hamburgerOpen: !this.state.hamburgerOpen})}>

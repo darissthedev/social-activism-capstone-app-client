@@ -11,6 +11,7 @@ class Dashboard extends Component {
                 </div>
                 <section className='user-dashboard-page'> 
                     <div className="dashboard-event">
+                        <div className="page-header">Your Dashboard</div>
                     <div className="post-image">
                         <img 
                             src="site-images/ehimetalor-akhere-3.jpg" 
@@ -39,11 +40,18 @@ class Dashboard extends Component {
                         </div>
                     </span>
 
-                    <div className="dashboard-view-details-button-div">
-                        <Link to="/post-details" className="dashboard-view-details-button">View Details</Link>
-                    </div>
-                    <div className="dashboard-remove-button-div">
-                        <Link to="/" className="dashboard-remove-button">Remove</Link>
+                    <div className="button-group">
+                        <Link to="/post-details">
+                            <button className="red">
+                                View Details
+                            </button>
+                        </Link>
+                    
+                        {/* <Link to="/">
+                            <button className="red">
+                                Remove
+                            </button>
+                        </Link> */}
                     </div>
 
                 </section>  

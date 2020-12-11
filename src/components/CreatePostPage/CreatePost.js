@@ -66,6 +66,7 @@ class CreatePost extends Component {
                     <TopNav />        
                 </div>
                 <section className='create-post-page'>
+                    <div className="page-content">
                         <div className="create-post-page-header">
                             <h2>
                                 Event Details
@@ -207,6 +208,7 @@ class CreatePost extends Component {
                              </button>
                         </div>
                     </form>
+                    </div>
                 </section>
             </div>
         )
