@@ -63,7 +63,7 @@ code {
 
 @media screen and (max-width: 480px) {
   .landing {
-    /* background-color: lightblue; */
+    background-color: lightblue;
   }
 }
 
