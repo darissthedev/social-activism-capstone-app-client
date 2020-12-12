@@ -19,11 +19,11 @@ class LandingPage extends Component {
                     <div className="landing-page-copy" >
                         <p>
                             Social Activism App with reliable and accurate information
-                            from your trusted social organizations, verified content updated daily.
+                            from your trusted social organizations, and verified content.
                         
                         <br /><br />
                         
-                            Post-ironic readymade williamsburg, meditation VHS beard bespoke hashtag etsy plaid tilde chambraSocial Activism App with reliable and accurate information from your trusted social organizations, verified content updated daily.      
+                            Build trust and provid a more detailed into what moves your social interests. Learn and be apart of a "greater-good" community. Follow, post and share your social activism you're proud to be apart of!    
                         </p>
                     </div>
                     

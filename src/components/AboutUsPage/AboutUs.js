@@ -16,9 +16,9 @@ class AboutUs extends Component {
                         </header>
                         <div className="about-us-page-copy" >
                             <p>
-                                Organic wayfarers readymade, retro swag narwhal poke wolf fixie polaroid thundercats single-origin coffee fingerstache.
+                                Organic and independent organizations welcome. This app is for those looking for more impactful ways to contribute and be apart of generation-changing communites. 
                             <br /><br />
-                                Post-ironic readymade williamsburg, meditation VHS beard bespoke hashtag etsy plaid tilde chambray flexitarian humblebrag. Green juice hot chicken meh beard quinoa cliche fam truffaut organic fixie. Salvia direct trade sustainable, 90's swag banjo gastropub. Williamsburg gluten-free yr viral subway tile, pour-over put a bird on it chartreuse. Mustache messenger bag pickled pitchfork. Polaroid health goth iceland pok pok.      
+                                2020 has allowed many of us to reflect in ways a "normal" year would maybe not have allowed. With this App, the idea was simple.. Let's securely digitize the truth of what we are in the streets fighting for. Let's take back what some media outlets can't/won't/or don't care to properly portray. This is for US by US.       
                             </p>
                         </div>
                         <Link to="/sign-up">

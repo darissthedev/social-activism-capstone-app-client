@@ -44,7 +44,7 @@ export class LogInPage extends Component {
                     </header>
                     <div className="log-in-page-copy">
                         <p>
-                            Social Activism App with reliable and accurate information.
+                            Social Activism App with reliable and accurate information. The first step to organizing is understanding.
                             <br />
                         </p>
                     </div>
