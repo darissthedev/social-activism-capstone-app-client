@@ -140,32 +140,6 @@ class CreatePost extends Component {
                 />
               </div>
 
-              {/* <div className="form-item">
-                <label htmlFor="create-post-page-choose-visuals">Visuals</label>
-                <select
-                  name="event_visuals"
-                  id="create-post-page-choose-visuals"
-                  onChange={this.handleChange}
-                >
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                </select>
-              </div>
-              <div className="form-item">
-                <label htmlFor="create-post-page-choose-chants">Chants</label>
-                <select
-                  name="event_chants"
-                  id="create-post-page-choose-chants"
-                  onChange={this.handleChange}
-                >
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                </select>
-              </div> */}
               <div className="form-item">
                 <label htmlFor="create-post-page-description">
                 

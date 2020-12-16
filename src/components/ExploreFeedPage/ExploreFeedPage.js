@@ -4,8 +4,6 @@ import TopNav from '../TopNav/TopNav';
 import config from '../../config'
 const { API_ENDPOINT } = config
 
-
-
 class ExploreFeedPage extends Component {
     constructor(props){
         super(props)
@@ -28,8 +26,9 @@ class ExploreFeedPage extends Component {
 
     formatDate = () => {}
    
-
     render() {
+        let posts = this.state;
+        console.log('posts with teddy', posts)
         return (
             <div>
                 <div className="explore-feed-page-top-nav">
@@ -54,7 +53,7 @@ class ExploreFeedPage extends Component {
                                     <h4>
                                         {post.event_date}   
                                     </h4>
-                                    <Link to="/post-details" className="myButton">
+                                    <Link to="/post-details" className="myButton" post={post}>
                                             View Details
                                     </Link>
                                 </li>
