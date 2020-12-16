@@ -1,33 +1,37 @@
 import React, { Component } from 'react'
 import TopNav from '../TopNav/TopNav';
-import { Link } from "react-router-dom";
+import TokenService from '../../services/token-service';
 import config from "../../config";
 
 class PostDetailsPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      post: [],
+      post: {},
+      loading: true
     };
   }
 
   componentDidMount = () => {
-    fetch(`${config.API_ENDPOINT}/post/{postId}`) 
+    const { postId } = this.props.match.params;
+    fetch(`${config.API_ENDPOINT}/post/${postId}`, {
+      headers: {
+        authorization: `bearer ${TokenService.getAuthToken()}`,
+      },
+    })
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
         this.setState({
           post: res,
+          loading: false
         });
       });
   };
  
-  componentDidMount() {
-    const { postId } = this.props.match.params;
-    console.log(postId);
-  }
 
   render() {
+    console.log(this.state.post);
     return (
       <div>
         <div className="user-dashboard-page-top-nav">
@@ -36,15 +40,18 @@ class PostDetailsPage extends Component {
 
         <section className="user-dashboard-page">
           <div>
+            <h2>
+              {this.state.post.event_title}
+            </h2>
             <ul>
               
-                <li key={post.event_title + index}>
-                  <h6>{post.event_type}</h6>
-                  <h3>{post.event_title}</h3>
-                  <h4>{post.event_date}</h4>
+                {/* <li key={this.props.post.event_title}>
+                  <h6>{this.props.post.event_type}</h6>
+                  <h3>{this.props.post.event_title}</h3>
+                  <h4>{this.props.post.event_date}</h4> */}
                 {/* add to dashboard button */}
-                </li>
-                <Link></Link>
+                {/* </li> */}
+                {/* <Link></Link> */}
             
             </ul>
           </div>
