@@ -53,7 +53,7 @@ class ExploreFeedPage extends Component {
                                     <h4>
                                         {post.event_date}   
                                     </h4>
-                                    <Link to={`/posts/${post.id}`} className="myButton" post={post}>
+                                    <Link to={`/posts/${post.id}`} className="red" post={post}>
                                             View Details
                                     </Link>
                                 </li>
