@@ -27,8 +27,7 @@ class ExploreFeedPage extends Component {
     formatDate = () => {}
    
     render() {
-        let posts = this.state;
-        console.log('posts', posts)
+        
         return (
             <div>
                 <div className="explore-feed-page-top-nav">
