@@ -168,7 +168,7 @@ class SignUpPage extends Component {
 
                             <small>
                                 Already have an account? 
-                                <Link to="/log-in" className="sign-up-log-in"> Log In</Link>
+                                <Link to="/log-in" className="sign-up-log-in">Log In</Link>
                             </small>
                         </div>
 

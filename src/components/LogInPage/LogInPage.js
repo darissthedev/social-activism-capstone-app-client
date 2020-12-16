@@ -88,7 +88,7 @@ export class LogInPage extends Component {
                       Don't have an account?
                       <Link to="/sign-up" className="page-link">
                         {" "}
-                        Sign Up
+                    Sign Up
                       </Link>
                     </small>
                   </div>
