@@ -199,6 +199,11 @@ select {
   background-color: #2f80ed;
 }
 
+.hamburger{
+  margin-right: 3%;
+  margin-top: 3%;
+}
+
 .hamburger button {
   display: inline-block;
   cursor: pointer;

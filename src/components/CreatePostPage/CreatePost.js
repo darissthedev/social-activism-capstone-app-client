@@ -140,7 +140,7 @@ class CreatePost extends Component {
                 />
               </div>
 
-              {/* <div className="form-item">
+              <div className="form-item">
                 <label htmlFor="create-post-page-choose-visuals">Visuals</label>
                 <select
                   name="event_visuals"
@@ -165,7 +165,7 @@ class CreatePost extends Component {
                   <option value=""></option>
                   <option value=""></option>
                 </select>
-              </div> */}
+              </div>
               <div className="form-item">
                 <label htmlFor="create-post-page-description">
                 
