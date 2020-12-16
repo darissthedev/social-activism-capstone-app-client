@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import TopNav from '../TopNav/TopNav';
-// import ExploreFeedPage from '../ExploreFeedPage/ExploreFeedPage'
+import { Link } from "react-router-dom";
 import config from "../../config";
 
 class PostDetailsPage extends Component {
@@ -36,13 +36,17 @@ class PostDetailsPage extends Component {
 
         <section className="user-dashboard-page">
           <div>
-            <p>
-              Hello
-              {/* {post.event_type} */}
-            </p>
-            <h3>{/* {post.event_title} */}</h3>
-            <p>Date</p>
-            <p>Location</p>
+            <ul>
+              
+                <li key={post.event_title + index}>
+                  <h6>{post.event_type}</h6>
+                  <h3>{post.event_title}</h3>
+                  <h4>{post.event_date}</h4>
+                {/* add to dashboard button */}
+                </li>
+                <Link></Link>
+            
+            </ul>
           </div>
           <div>
             <p>Contributor</p>

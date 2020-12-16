@@ -28,7 +28,7 @@ class ExploreFeedPage extends Component {
    
     render() {
         let posts = this.state;
-        console.log('posts with teddy', posts)
+        console.log('posts', posts)
         return (
             <div>
                 <div className="explore-feed-page-top-nav">
