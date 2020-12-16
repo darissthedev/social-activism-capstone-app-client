@@ -90,7 +90,7 @@ class SignUpPage extends Component {
         return (
             <div>
                 <div className="landing"></div>
-                <section className='sign-up-page'>
+                <section className='sign-up-page container'>
                     <div className="page-content">
                     <header className="sign-up-page-header">
                         <h1>Create Account
@@ -147,9 +147,7 @@ class SignUpPage extends Component {
                                 name="orgName"
                                 onChange={this.handleChange}
                             />
-                            {/* {formErrors.orgName.length > 0 && (
-                            <span className="errorMessage">{formErrors.orgName}</span>
-                        )} */}
+                            
                         </div>
 
                         <div className='sign-up-page-form-item'>
