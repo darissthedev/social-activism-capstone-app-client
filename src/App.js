@@ -38,7 +38,10 @@ class App extends Component {
               <Route path="/about-us" component={AboutUs} />
               <PrivateRoute path="/dashboard" component={Dashboard} />
               <PrivateRoute path="/create-post" component={CreatePost} />
-              <PrivateRoute path="/post-details" component={PostDetailsPage} />
+              <PrivateRoute
+                path="/posts/:postId"
+                component={PostDetailsPage}
+              />
               <PrivateRoute path="/explore-feed" component={ExploreFeedPage} />
 
               <Route component={Error} />

@@ -1,13 +1,30 @@
 import React, { Component } from 'react'
 import TopNav from '../TopNav/TopNav';
+// import ExploreFeedPage from '../ExploreFeedPage/ExploreFeedPage'
+import config from "../../config";
 
 class PostDetailsPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      //posts.id: [],
-      posts: [],
+      post: [],
     };
+  }
+
+  componentDidMount = () => {
+    fetch(`${config.API_ENDPOINT}/post/{postId}`) 
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res);
+        this.setState({
+          post: res,
+        });
+      });
+  };
+ 
+  componentDidMount() {
+    const { postId } = this.props.match.params;
+    console.log(postId);
   }
 
   render() {
@@ -16,27 +33,20 @@ class PostDetailsPage extends Component {
         <div className="user-dashboard-page-top-nav">
           <TopNav />
         </div>
-        {/* SHOULD POSTS BE GATHERED BY ID?? */}
+
         <section className="user-dashboard-page">
           <div>
-            <img src="#" alt="" width="500" height="600" />
-          </div>
-
-          <div>
-            <p>Protest Type</p>
-            <h3>Title</h3>
+            <p>
+              Hello
+              {/* {post.event_type} */}
+            </p>
+            <h3>{/* {post.event_title} */}</h3>
             <p>Date</p>
             <p>Location</p>
           </div>
           <div>
             <p>Contributor</p>
             <img src="#" alt="" width="80" height="80" />
-          </div>
-
-          <div className="user-dashboard-page-button">
-            <a href="/dashboard" className="myButton">
-              Add to Dashboard
-            </a>
           </div>
         </section>
       </div>
