@@ -11,7 +11,9 @@ class Dashboard extends Component {
         </div>
         <section className="user-dashboard-page">
           <div className="dashboard-event">
-            <div className="page-header">Your Dashboard</div>
+            <div className="dashboard-header">
+              <h2>Your Dashboard</h2>
+            </div>
             <div className="post-image">
               <img src="site-images/ehimetalor-akhere-3.jpg" alt="" />
             </div>

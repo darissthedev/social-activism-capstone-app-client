@@ -74,7 +74,7 @@ class CreatePost extends Component {
         <div className="create-post-page-top-nav">
           <TopNav />
         </div>
-        <section className="create-post-page">
+        <section className="create-post-page container-2">
           <div className="page-content">
             <div className="create-post-page-header">
               <h2>Event Details</h2>
@@ -90,6 +90,8 @@ class CreatePost extends Component {
                   onChange={this.handleChange}
                   name="event_date"
                 />
+                </div>
+                <div>
                 <input
                   type="time"
                   onChange={this.handleChange}
@@ -97,11 +99,10 @@ class CreatePost extends Component {
                 />
               </div>
               <div className="form-item">
-                <label htmlFor="create-post-page-event-title">
-                  Event Title
-                </label>
+                <label htmlFor="create-post-page-event-title"></label>
                 <input
                   name="event_title"
+                  placeholder="Event Title"
                   id="create-post-page-event-title"
                   required
                   onChange={this.handleChange}
@@ -109,7 +110,7 @@ class CreatePost extends Component {
                 ></input>
               </div>
               <div className="form-item">
-                <label htmlFor="create-post-page-event-type">Event Type</label>
+                <label htmlFor="create-post-page-event-type"></label>
                 <select
                   name="event_type"
                   id="create-post-page-event-type"
@@ -130,7 +131,7 @@ class CreatePost extends Component {
               </div>
 
               <div className="form-item">
-                <label>Location</label>
+                <label></label>
                 <input
                   type="text"
                   name="event_location"
@@ -139,7 +140,7 @@ class CreatePost extends Component {
                 />
               </div>
 
-              <div className="form-item">
+              {/* <div className="form-item">
                 <label htmlFor="create-post-page-choose-visuals">Visuals</label>
                 <select
                   name="event_visuals"
@@ -164,23 +165,24 @@ class CreatePost extends Component {
                   <option value=""></option>
                   <option value=""></option>
                 </select>
-              </div>
+              </div> */}
               <div className="form-item">
                 <label htmlFor="create-post-page-description">
-                  Description
+                
                 </label>
                 <textarea
                   id="create-post-page-description"
                   type="text"
+                  placeholder="Event Description"
                   name="event_description"
                   onChange={this.handleChange}
-                  rows="4"
+                  rows="8"
                   cols="50"
                 ></textarea>
               </div>
-              <div className="create-post-page-status"></div>
+              
               <div className="form-item">
-                <button type="submit" className="red">
+                <button type="submit" className="red create-submit-btn">
                   Submit for Review
                 </button>
               </div>

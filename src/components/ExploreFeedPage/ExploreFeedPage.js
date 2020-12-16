@@ -40,8 +40,7 @@ class ExploreFeedPage extends Component {
                         <img 
                             src="#" 
                             alt="" 
-                            // width="670" 
-                            // height="455" 
+                            
                             />
                         <ul>
                             {this.state.posts.map((post, index)=> (
