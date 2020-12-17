@@ -374,35 +374,8 @@ img {
   margin-bottom: 15px;
 }
 
-/* media queries */
+/* Dummy credentials */
 
-/* @media screen and (min-width: 320px) and (max-width: 768px) {
-  h1 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 43px;
-    width: 300px;
-  } */
-
-  /* .landing {
-    background-image: url(/src/images/landing_page_image.jpg);
-    display: block;
-    align-items: center;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    background-repeat: no-repeat;
-    max-width: 100%;
-  } */
-/* 
-  .landing-page,
-  .about-page,
-  .sign-up-page,
-  .login-page {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-left: 15%;
-  }
-} */
+.credentials p{
+  color: #95A3B3;
+}

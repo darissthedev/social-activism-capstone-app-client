@@ -25,7 +25,7 @@ class LandingPage extends Component {
                       content.
                       <br />
                       <br />
-                      Build trust and provid a more detailed into what moves
+                      Build trust and provide a more detailed look at what peaks
                       your social interests. Learn and be apart of a
                       "greater-good" community. Follow, post and share your
                       social activism you're proud to be apart of!
@@ -52,6 +52,15 @@ class LandingPage extends Component {
                       </Link>
                     </small>
                   </div>
+                </div>
+                <div className="credentials">
+                  <p>
+                  Test Login credentials
+                  <br />
+                  email: bob@fork.com
+                  <br />
+                  password: password123
+                  </p>
                 </div>
               </div>
             </section>

@@ -42,6 +42,7 @@ class AboutUs extends Component {
                       {" "}
                       Log in
                     </Link>
+                    
                   </small>
                 </div>
               </div>
