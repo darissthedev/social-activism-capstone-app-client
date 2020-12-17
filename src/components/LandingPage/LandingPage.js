@@ -55,7 +55,7 @@ class LandingPage extends Component {
                 </div>
                 <div className="credentials">
                   <p>
-                  Test Login credentials
+                  Demo user credentials:
                   <br />
                   email: bob@fork.com
                   <br />

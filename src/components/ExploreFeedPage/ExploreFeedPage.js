@@ -29,41 +29,31 @@ class ExploreFeedPage extends Component {
     render() {
         
         return (
-            <div>
-                <div className="explore-feed-page-top-nav">
-                    <TopNav />        
-                </div>
-                <section className="explore-feed-page">
-                    <div className="explore-feed-page-thumbnails">
-                        <img 
-                            src="#" 
-                            alt="" 
-                            
-                            />
-                        <ul>
-                            {this.state.posts.map((post, index)=> (
-                                <li key={post.event_title + index}>
-                                    <h6>
-                                        {post.event_type}   
-                                    </h6>
-                                    <h3>
-                                        {post.event_title}   
-                                    </h3>
-                                    <h4>
-                                        {post.event_date}   
-                                    </h4>
-                                    <Link to={`/posts/${post.id}`} className="red" post={post}>
-                                            View Details
-                                    </Link>
-                                </li>
-                                
-                            ))}
-                        </ul>
-                        
-                    </div>
-                </section>
+          <div>
+            <div className="explore-feed-page-top-nav">
+              <TopNav />
             </div>
-        )
+            <section className="explore-feed-page">
+              <div className="explore-feed-page-thumbnails">
+                <img src="#" alt="" />
+                <ul>
+                  {this.state.posts.map((post, index) => (
+                    <li key={post.event_title + index}>
+                      <h6>{post.event_type}</h6>
+                      <h3>{post.event_title}</h3>
+                      <h4>{post.event_date}</h4>
+                      <Link
+                        to={`/posts/${post.id}`}
+                        post={post}>
+                        <button className="red">View Details</button>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </section>
+          </div>
+        );
     }
 }
 

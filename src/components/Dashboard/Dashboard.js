@@ -31,18 +31,6 @@ class Dashboard extends Component {
               <h5>CITY HALL - DOWNTOWN</h5>
             </div>
           </div>
-          <span className="dashboard-contributor">
-            <p>Contributor</p>
-            <div className="contributor-image">
-              <img
-                src="profile-pic/IMG_1008.jpg"
-                alt=""
-                width="80"
-                height="80"
-              />
-            </div>
-          </span>
-
           <div className="button-group">
             <Link to="/post-details">
               <button className="red">View Details</button>
